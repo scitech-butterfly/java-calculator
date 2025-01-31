@@ -29,4 +29,13 @@ class Calculator {
         if (n <= 1) return n;
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
+
+     // Sum of elements in an array
+    public int sumArray(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        return sum;
+    }    
 }
