@@ -43,9 +43,9 @@ Computes the Fibonacci number for a given position.</li>
 <h3>Project Structure</h3>
 <p>
 project-directory/
-├── Main.java        // Entry point of the application
-├── UserInput.java   // Handles user input
-└── Calculator.java  // Contains all mathematical operations
+<p>├── Main.java        // Entry point of the application</p>
+<p>├── UserInput.java   // Handles user input</p>
+<p>└── Calculator.java  // Contains all mathematical operations</p>
 </p>
 
 <h3>Usage</h3>
