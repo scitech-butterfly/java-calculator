@@ -15,7 +15,7 @@ class Main{
 
         while (true) {
             System.out.println("Select an operation:");
-            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Fibonacci\n0. Exit");
+            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Fibonacci\n6. Sum of Array\n7. Mean of Array\n0. Exit");
             int choice = scanner.nextInt();
 
             if (choice == 0) {
@@ -44,7 +44,15 @@ class Main{
                     System.out.println("Enter a number for Fibonacci sequence:");
                     int n = scanner.nextInt();
                     System.out.println("Fibonacci of " + n + ": " + calculator.fibonacci(n));
-                }                
+                }
+		case 6 -> {
+                    int[] array = userInput.getArray();
+                    System.out.println("Sum of Array: " + calculator.sumArray(array));
+                }
+                case 7 -> {
+                    int[] array = userInput.getArray();
+                    System.out.println("Mean of Array: " + calculator.meanArray(array));
+                }	    
                 default -> System.out.println("Invalid choice.");
             }
             System.out.println();
