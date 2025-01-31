@@ -37,7 +37,7 @@ Computes the Fibonacci number for a given position.</li>
 <li>Sum of elements</li>
 
 <li>Mean of elements</li>
-</li>
+</ul>
 
 
 <h3>Project Structure</h3>
