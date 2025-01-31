@@ -13,4 +13,16 @@ class UserInput {
         return numbers;
     }
 
+    // Method to get an array of integers from the user
+    int[] getArray() {
+        System.out.println("Enter the size of the array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
+        return array;
+    }
 }
