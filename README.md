@@ -1,5 +1,3 @@
-# java-calculator
-
 <html>
 <h1>Java Calculator and Fibonacci Program</h1>
 <h2>Author</h2>
