@@ -15,7 +15,7 @@ class Main{
 
         while (true) {
             System.out.println("Select an operation:");
-            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n0. Exit");
+            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Fibonacci\n0. Exit");
             int choice = scanner.nextInt();
 
             if (choice == 0) {
@@ -40,7 +40,11 @@ class Main{
                     int[] numbers = userInput.getTwoNumbers();
                     System.out.println("Quotient: " + calculator.divide(numbers));
                 }
-                
+		case 5 -> {
+                    System.out.println("Enter a number for Fibonacci sequence:");
+                    int n = scanner.nextInt();
+                    System.out.println("Fibonacci of " + n + ": " + calculator.fibonacci(n));
+                }                
                 default -> System.out.println("Invalid choice.");
             }
             System.out.println();
