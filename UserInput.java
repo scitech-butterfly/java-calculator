@@ -31,7 +31,7 @@ class UserInput {
     void selectOperation(Calculator calculator) {
         while (true) {
             System.out.println("Select an operation:");
-            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Fibonacci\n6. Sum of Array\n7. Mean of Array\n0. Exit");
+            System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Fibonacci\n6. Sum of Array\n7. Mean of Array\n8. Variance of Array\n9. Standard Deviation of Array\n0. Exit");
             int choice = scanner.nextInt();
 
             if (choice == 0) {
@@ -68,6 +68,14 @@ class UserInput {
                 case 7 -> {
                     int[] array = getArray();
                     System.out.println("Mean of Array: " + calculator.meanArray(array));
+                }
+                case 8 -> {
+                    int[] array = getArray();
+                    System.out.println("Variance of Array: " + calculator.varianceArray(array));
+                }
+                case 9 -> {
+                    int[] array = getArray();
+                    System.out.println("Standard Deviation of Array: " + calculator.stdDeviationArray(array));
                 }
                 default -> System.out.println("Invalid choice.");
             }
