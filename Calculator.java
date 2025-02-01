@@ -47,4 +47,21 @@ class Calculator {
         }
         return (double) sum / array.length;
     }
+
+    // Variance of an array
+    public double varianceArray(int[] array) {
+        double mean = meanArray(array);
+        double sumSquaredDiffs = 0;
+        
+        for (int num : array) {
+            sumSquaredDiffs += Math.pow(num - mean, 2);
+        }
+        
+        return sumSquaredDiffs / array.length;
+    }
+
+    // Standard deviation of an array
+    public double stdDeviationArray(int[] array) {
+        return Math.sqrt(varianceArray(array));
+    }
 }
