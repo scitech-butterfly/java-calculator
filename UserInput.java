@@ -1,5 +1,6 @@
 //UserInput.java
 
+import java.util.*;
 class UserInput {
     Scanner scanner = new Scanner(System.in);
 
@@ -40,19 +41,19 @@ class UserInput {
 
             switch (choice) {
                 case 1 -> {
-                    int[] numbers = userInput.getTwoNumbers();
+                    int[] numbers = getTwoNumbers();
                     System.out.println("Sum: " + calculator.add(numbers));
                 }
                 case 2 -> {
-                    int[] numbers = userInput.getTwoNumbers();
+                    int[] numbers = getTwoNumbers();
                     System.out.println("Difference: " + calculator.subtract(numbers));
                 }
                 case 3 -> {
-                    int[] numbers = userInput.getTwoNumbers();
+                    int[] numbers = getTwoNumbers();
                     System.out.println("Product: " + calculator.multiply(numbers));
                 }
                 case 4 -> {
-                    int[] numbers = userInput.getTwoNumbers();
+                    int[] numbers = getTwoNumbers();
                     System.out.println("Quotient: " + calculator.divide(numbers));
                 }
                 case 5 -> {
@@ -61,11 +62,11 @@ class UserInput {
                     System.out.println("Fibonacci of " + n + ": " + calculator.fibonacci(n));
                 }
                 case 6 -> {
-                    int[] array = userInput.getArray();
+                    int[] array = getArray();
                     System.out.println("Sum of Array: " + calculator.sumArray(array));
                 }
                 case 7 -> {
-                    int[] array = userInput.getArray();
+                    int[] array = getArray();
                     System.out.println("Mean of Array: " + calculator.meanArray(array));
                 }
                 default -> System.out.println("Invalid choice.");
